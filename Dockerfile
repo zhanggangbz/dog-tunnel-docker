@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 RUN apt-get update
-RUN apt-get -y wget
+RUN apt-get install -y wget
 
 # Remove pre-installed database
 RUN wget -O dt64.tgz http://dog-tunnel.tk/download/linux64
