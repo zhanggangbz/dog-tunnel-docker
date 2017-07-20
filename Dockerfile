@@ -1,8 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
-
-# Install packages
-ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update
+RUN apt-get -y wget
 
 # Remove pre-installed database
 RUN wget -O dt64.tgz http://dog-tunnel.tk/download/linux64
