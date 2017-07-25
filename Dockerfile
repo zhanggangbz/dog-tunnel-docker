@@ -10,5 +10,5 @@ RUN tar zxvf dt64.tgz  -C /dt64
 
 RUN chmod -R 777 /dt64
 
-CMD ["/dt64/dtunnel_s" ,"-admin:1234" , "FOREGROUND"] 
+CMD ["/dt64/dtunnel_s" ,"-admin" ,":1234" , "FOREGROUND"] 
 EXPOSE 8000 8018 1234
